@@ -21,7 +21,7 @@ The sample application uses Spring Boot and the spring-security-saml2-service-pr
 | Description           | This is a spring-boot application secured with SAML using WSO2IS | 
 | Assertion Consumer URL| http://localhost:8080/login/saml2/sso/wso2   | 
 
-![Sceenshot](assets/saml-inboud-config.png?raw=true)
+![Sceenshot](https://github.com/piraveena/spring-boot-saml2-sample/blob/master/assets/saml-inbound-config.png)
 
 ## Reference
 1. https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config-yaml
