@@ -23,6 +23,20 @@ The sample application uses Spring Boot and the spring-security-saml2-service-pr
 
 ![Sceenshot](https://github.com/piraveena/spring-boot-saml2-sample/blob/master/assets/saml-inbound-config.png)
 
+## Configurations
+
+- Add the following properties in application.properties file
+
+```properties
+spring.security.saml2.relyingparty.registration.wso2.signing.credentials[0].private-key-location={application-private-key}
+spring.security.saml2.relyingparty.registration.wso2.signing.credentials[0].certificate-location={{application-public-key}
+spring.security.saml2.relyingparty.registration.wso2.identityprovider.verification.credentials[0].certificate-location={public-key-of-IS}
+spring.security.saml2.relyingparty.registration.wso2.identityprovider.entity-id={entity-id-of-is}
+spring.security.saml2.relyingparty.registration.wso2.identityprovider.sso-url=https://{IS-HOST-NAME}:{IS-PORT}/samlsso
+```
+
+
+
 ## Reference
 1. https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config-yaml
 2. https://github.com/spring-projects/spring-security/blob/master/docs/manual/src/docs/asciidoc/_includes/servlet/saml2/saml2-login.adoc
