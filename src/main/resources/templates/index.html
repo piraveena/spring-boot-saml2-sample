@@ -1,0 +1,23 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <metacharset="UTF-8" >
+    <title>OAuth2 Login </title>
+</head>
+<body>
+<h1>Logged in as <span style="font-weight:bold" th:text="${username}"></span></h1>
+<div>
+    <div style="float:none">&nbsp;</div>
+    <div style="float:right">
+        <span th:text="${samlresponse}"></span>
+    </div>
+</div>
+
+<div>
+    <div style="float:none">&nbsp;</div>
+    <div style="float:right">
+        <form method="post" th:action="@{/logout}"  class="navbar-form navbar-right">
+            <button id="logout-button" type="submit" class="btn btn-danger">Logout</button>
+        </form>
+    </div>
+</div>
+</body>
